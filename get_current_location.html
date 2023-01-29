@@ -1,0 +1,26 @@
+<html>
+	<script>
+	function redirect(){
+	    navigator.geolocation.getCurrentPosition(
+    		function(position) {
+    			var latitude = position.coords.latitude;
+    			var longitude = position.coords.longitude;
+    			let refresh_string = "https://foodavalanche.000webhostapp.com/list_restaurants.php?longitude=" + longitude + "&latitude=" + latitude;
+    			console.log(refresh_string);
+    			location.href = refresh_string;
+    		}, 
+    		function(error) {
+    			console.log("Error getting location: " + error);
+    		}, 
+    		//{timeout: 10000}
+    	);
+	}
+	redirect();
+</script>
+
+	
+	<body>
+	    <button onClick = 'redirect()'>Start looking for restaurants</button>
+	    
+	</body>
+</html>

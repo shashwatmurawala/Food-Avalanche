@@ -1,0 +1,40 @@
+<html>
+<body>
+	<form action = "set_food.php" method="post">
+		<p style="color:white"><u>Set food</u><br /></p>
+		<p style="color:white">Restaurant ID: </p><input type = "text" name = "restaurant_id">
+		<p style="color:white">Number of Meals Available (Set New Value): </p><input type = "text" name = "num_items_available">
+		<input type="submit">
+	</form>
+	<br />
+	<br />
+	
+	<form action = "add_food.php" method="post">
+		<p style="color:white"><u>Add food</u><br /></p>
+		<p style="color:white">Restaurant ID: </p><input type = "text" name = "restaurant_id">
+		<p style="color:white">Add Surplus Meals (to Existing Quantity): </p><input type = "text" name = "num_items_add">
+		<input type="submit">
+	</form>
+	<br />
+	<br />
+	
+	
+	<form action = "remove_food.php" method="post">
+		<p style="color:white"><u>Remove food</u><br /></p>
+		<p style="color:white">Restaurant ID: </p><input type = "text" name = "restaurant_id">
+		<p style="color:white">Meals Given Away Today: </p><input type = "text" name = "num_items_remove">
+		<input type="submit">
+	</form>
+
+    <br />
+	<br />
+    <form action = "get_info.php" method="post">
+		<p style="color:white"><u>Get Statistics on Restaurant</u><br /><p style="color:white">
+		<p style="color:white">Restaurant ID: </p><input type = "text" name = "restaurant_id">
+		<input type="submit">
+	</form>
+	<br />
+	<br />
+
+</body>
+</html>
